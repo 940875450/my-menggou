@@ -1,0 +1,89 @@
+header{width: 100%;}
+.head{padding: 7px 20px;
+      margin: 0 auto;
+      background: #f4f2ef;
+      box-shadow: inset 0 1px 0 0 #fff, 0 0 0 1px rgba(77,31,0,.2), 0 1px 5px 0 rgba(0,0,0,.1);
+      overflow: hidden;
+      color: #7b6156;
+      width: 1000px;
+  div{
+    float: left;
+    height: 30px;
+    a{
+      padding: 0px 8px;
+      border-radius: 2px;
+      text-shadow: hsla(0,0%,100%,.7) 0 1px 0;
+      font-size: 12px;
+      margin-bottom: -6px;
+      &:hover{color: #ccc;}
+    }
+    a:nth-child(2){padding-left:30px; background: url("../img/shouye-xbi.png") no-repeat -87px -16px;}
+    a:nth-child(1){display: inline-block; width: 39px;height: 30px;background: url("../img/shouye-logo.png") no-repeat 0px 8px;background-size: 40px 20px;}
+  }
+  ul{ float: right;
+      line-height: 28px;
+          li{float: left;
+            font-size: 12px;
+            margin: 0 3px;
+            a{padding: 4px 8px 3px;
+              background: #f4f2ef;
+              border: 1px solid #bebab4;
+              border-radius: 2px;
+              box-shadow: inset 0 0 0 1px #fff;
+              font-size: 12px;
+              &:hover{background: #fff;}}
+        }
+          li:nth-child(3) a{ display: inline-block;margin-top: 2px;width: 15px;height: 15px;background: url("../img/shouye-xbi.png") no-repeat -124px -649px;}
+          li:nth-child(4){padding: 0 8px;margin-left: 8px;border-left: 1px solid #d5d3d0;}
+    }
+}
+footer{width: 100%;}
+.footer{
+  width: 1000px;
+  height: 320px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  div{
+    display: flex;
+    justify-content: space-between;
+    ul{
+      width: 200px;
+      height: 210px;
+      padding-left: 10px;
+      border-bottom: 1px solid #ddd;
+    li.foot-title{color: #555;
+        font-size: 14px;
+        border-bottom: 1px solid #ddd;
+        margin: 0 0 10px;
+        padding: 0 0 10px;
+        line-height: 1;}
+    li a{
+      color: #999;
+      font-size: 12px;
+      line-height: 26px;
+      &:hover{color: #97776a;}
+    }
+    }
+  }
+  >ul{margin:0 auto;width: 200px;height: 28px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      li{float: left;
+        width: 48px;
+        a{font-size: 12px;color: #97776a;}
+      }
+  }
+  >p{
+    text-align: center;
+    clear: left;
+    font-family: Arial;
+    color: #999;
+    line-height: 120%;
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+  p.zfb{display: block;width: 88px;height: 32px;margin: 0 auto;background:url("../img/alipay_veri.png") no-repeat 0px 0px;background-size: 88px 32px;}
+}

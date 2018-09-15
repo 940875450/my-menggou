@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>萌猫商城·再临！</title>
+  <link rel="stylesheet" href="/css/shop.css">
+  <script type="text/javascript" src="/libs/require.js" data-main="/js/shop.js"></script>
+</head>
+<body>
+<div class="shop-wrap">
+	<div class="shop-left">
+		<a href="/index.html" class="shop-logo"><img src="/img/shop-logo.png"/></a>
+		<ul class="shop-nav">
+          <li class="active"><a href="javascript:;" class="group shop-eles">现货商品</a></li>
+          <li><a href="javascript:;" class="group shop-eles">小周边</a></li>
+          <li><a href="javascript:;" class="group shop-eles">服装家居</a></li>
+          <li><a href="javascript:;" class="group shop-eles">手办/模型</a></li>
+    </ul>
+    <ul class="shop-nav">
+      <li><a href="/html/denglu.html" class="group">登录</a></li>
+      <li><a href="/html/zhuce.html" class="group">注册</a></li>
+    </ul>
+    <ul class="shop-nav">
+      <li><a href="javascript:;" class="group" id="error">购物注意事项</a></li>
+    </ul>
+    <form>
+    	<input id="shop-server" class="shop-server" type="text" value="" placeholder="搜索商品 ...">
+    	<input class="shop-serbtn" value="" type="button">
+    </form>
+	</div>
+	<div class="shop-right">
+		<div class="shop-bq">
+			
+		</div>
+		<div class="shop-keyw">
+			<dl>
+				<dt>关键词</dt>
+				<dd>
+					<form>
+							<input id="shop-server1" class="shop-server" type="text" value="" placeholder="在结果中搜索">
+							<input class="shop-serbtn" value="" type="button">
+					</form>
+				</dd>
+			</dl>
+		</div>
+		<div class="shop-fenye">
+			<div class="shop-fy">
+				<span class="shop-page shopkage">
+        </span>
+        <a href="javascript:;" class="shop-prev">上一页</a>
+        <a href="javascript:;" class="shop-next">下一页</a>
+        <span class="shop-page">
+          第
+          <input class="shop-pginput" type="number" min="1" value="1">
+          页
+        </span>
+        <a class="shop-jump" href="javascript:;">GO</a>
+			</div>
+		</div>
+		<div class="shop-main" id="shopmain"></div>
+			<script type="text/html" id="shopMain">
+				{{each data item index}}
+				<div class="shop-show">
+				<a href="/html/element.html" target="_blank" data-id = "{{item.id}}"><img src="{{item.eleimg}}" alt="{{item.title}}"/></a>
+				<a class="shop-title" href="/html/element.html" data-id = "{{item.id}}" target="_blank" title="{{item.title}}">{{item.title}}</a>
+				<p class="shop-date" title="发售日">{{item.eledate}}</p>
+				<p class="shop-price">
+            <span class="shop-price-span">{{item.eleprice}}</span>
+        </p>
+			</div>
+			 {{ /each}}
+			</script>			
+			<script type="text/html" id="noneShop">
+					<div style="width: 100%;height: 25px;margin: 40px 0;text-align: center;"><b>没有符合条件的商品 (´･ω･`)</b></div>
+			</script>
+			<div class="shop-fenye">
+			<div class="shop-fy">
+				<span class="shop-page shopkage" id="shopkage"></span>
+        <script type="text/html" id="shopKage">
+        	<span>{{index}}</span> / <span>{{allNum}}</span>
+        </script>
+        <a href="javascript:;" class="shop-prev">上一页</a>
+        <a href="javascript:;" class="shop-next">下一页</a>
+        <span class="shop-page">
+          第
+          <input class="shop-pginput" type="number" min="1" value="1">
+          页
+        </span>
+        <a class="shop-jump" href="javascript:;">GO</a>
+			</div>
+		</div>
+		</div>		
+		<div class="shop-footer">
+			<a href="/index.html" target="_blank">萌购旗下网站</a>
+		</div>
+	</div>
+</div>
+<a href="javascript:;" class="kefu"><img src="/img/kefu.png"></a>
+<a href="/html/gwc.html" class="my-shop" title="我的购物车" target="_blank"></a>
+</body>
+</html>

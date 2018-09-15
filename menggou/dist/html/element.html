@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>萌猫商城·再临！</title>
+  <link rel="stylesheet" href="/css/element.css">
+  <script type="text/javascript" src="/libs/require.js" data-main="/js/element.js"></script>
+</head>
+<body>
+<div class="shop-wrap">
+	<div class="shop-left">
+		<a href="/index.html" class="shop-logo"><img src="/img/shop-logo.png"/></a>
+		<ul class="shop-nav">
+          <li><a href="/html/shop.html" class="group">现货商品</a></li>
+          <li><a href="/html/shop.html" class="group">小周边</a></li>
+          <li><a href="/html/shop.html" class="group">服装家居</a></li>
+          <li><a href="/html/shop.html" class="group">手办/模型</a></li>
+    </ul>
+    <ul class="shop-nav">
+      <li><a href="/html/denglu.html" class="group">登录</a></li>
+      <li><a href="/html/zhuce.html" class="group">注册</a></li>
+    </ul>
+    <ul class="shop-nav">
+      <li><a href="javascript:;" class="group">购物注意事项</a></li>
+    </ul>
+    <form>
+    	<input class="shop-server" type="text" value="" placeholder="搜索商品 ...">
+    	<input class="shop-serbtn" value="" type="submit">
+    </form>
+	</div>
+	<div class="element-center">
+		<div class="element-one" id="elementimg"></div>
+		<script type="text/html" id="elementImg">
+			<h1 class="element-h1" surround-text="预览"><img src="/img/moe!!.png"></h1>
+			<div class="wrap-show"><img src="{{data[0].img1}}" alt="" class="show-big"/></div> 
+			<div class="show-small">
+				<img src="{{data[0].img1}}" alt="" />
+				<img src="{{data[0].img2}}" alt="" />
+				<img src="{{data[0].img3}}" alt="" />
+				<img src="{{data[0].img4}}" alt="" />
+			</div>
+		</script>
+		<div class="element-one">
+			<h1 class="element-h1" surround-text="猜你喜欢"><img src="/img/moe!!.png"></h1>
+			<div class="element-other" id="elementother"></div>
+			<script type="text/html" id="elementOther">
+				{{each data item index}}
+				<div class="element-item">
+					<a href="/html/element.html" data-id = "{{item.id}}"><img src="{{item.eleimg}}" alt="{{item.title}}"/></a>
+					<a class="shop-title" href="/html/element.html" title="{{item.title}}">{{item.title}}</a>
+					<p class="shop-price">
+		        <span class="shop-price-span">{{item.eleprice}} </span> 
+		   		</p>
+				</div>
+				{{/each}}
+			</script>
+			<div class="element-btn">
+        <a href="javascrpit:;" class="element-prev" id="element-prev">◄</a>
+        <a href="javascript:;" class="element-next" id="element-next">►</a>
+      </div>
+		</div>
+		<div class="element-one">
+			<h1 class="element-h1" surround-text="购买流程"><img src="/img/moe!!.png"></h1>
+			<img src="/img/help-small.png" alt="" class="help-small"/>
+		</div>
+		<div class="shop-footer">
+			<a href="/index.html" target="_blank">萌购旗下网站</a>
+		</div>
+	</div>
+	<div class="element-right" id="elementRight">
+	</div>
+	<script type="text/html" id="elementright">
+						<h2 class="element-right-title">{{data[0].title}}</h2>
+      <div class="element-order">
+      	<div class="item-price">
+          <span>萌猫商城售价</span>
+          	  <i>￥</i><b>{{data[0].eleprice1}}</b>
+  				</div>
+  				<div class="banben-chose">
+  					<div class="type-title">版本</div>
+  						<ul>
+                  <li class="selected element-selected">日版</li>
+                  <li class="element-selected">代理版</li>
+              </ul>
+  				</div>
+  				<div class="put-gwc">
+  					<a href="javascript:;">加入购物车</a>
+  				</div>
+      </div>
+      <div class="ele-style">
+      	<h2 class="title-tab">商品属性</h2>
+  	<table cellspacing="0" cellpadding="0">
+			<tbody>
+  		<tr>
+        <th>预订截单日</th>
+        <td>{{data[0].emm1}}</td>
+      </tr>
+      <tr>
+	      <th>发售日</th>
+	      <td>{{data[0].emm2}}</td>
+    	</tr>
+      <tr>
+        <th>作品系列</th>
+        <td>{{data[0].emm3}}</td>
+      </tr>
+      <tr>
+        <th>类型</th>
+        <td>{{data[0].emm4}}</td>
+      </tr>
+      <tr>
+        <th>出品商</th>
+        <td>{{data[0].emm5}}</td>
+      </tr>
+      <tr>
+        <th>角色名</th>
+        <td>{{data[0].emm6}}</td>
+      </tr>
+       <tr>
+        <th>尺寸</th>
+        <td>{{data[0].emm7}}</td>
+      </tr>
+      <tr>
+        <th>原型师</th>
+        <td>{{data[0].emm8}}</td>
+      </tr>
+      <tr>
+        <th>模型原画</th>
+        <td>{{data[0].emm9}}</td>
+      </tr>
+      <tr>
+        <th>比例</th>
+        <td>{{data[0].emm10}}</td>
+      </tr>
+    <tr>
+      <th>说明</th>
+      <td>
+      	  <p><b>&gt; 代理版</b></p>
+          <p>该商品为日本厂商授权的正规代理商的正品商品。</p>
+        	<p><b>&gt; 费用</b></p>
+          <p>萌猫支持选择多种国内快递方式，国内快递费用不包含在显示售价中，需另行计算和支付。<br>
+          	<a href="http://www.030buy.com/help/article?article_id=30#china" target="_blank">点此查看各快递价格</a></p>
+          <p><b>&gt; 特典</b></p>
+          <p>商品所含特典的情况请以商品标题描述为准。</p>
+      </td>
+    </tr>
+  </tbody>
+ </table>
+  		</div>
+	</script>
+</div>
+<a href="javascript:;" class="kefu"><img src="/img/kefu.png"></a>
+<a href="/html/gwc.html" class="my-shop" title="我的购物车" target="_blank"></a>
+<a href="javascript:;" class="love" title="收藏这件商品"></a>
+</body>
+</html>

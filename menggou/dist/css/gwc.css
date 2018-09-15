@@ -1,0 +1,504 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, em, i {
+  font-weight: 100;
+  font-style: normal; }
+
+ul, ol, li {
+  list-style-type: none; }
+
+a {
+  color: #666;
+  text-decoration: none;
+  outline: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+header {
+  width: 100%; }
+
+.head {
+  padding: 7px 20px;
+  margin: 0 auto;
+  background: #f4f2ef;
+  box-shadow: inset 0 1px 0 0 #fff, 0 0 0 1px rgba(77, 31, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  color: #7b6156;
+  width: 1000px; }
+  .head div {
+    float: left;
+    height: 30px; }
+    .head div a {
+      padding: 0px 8px;
+      border-radius: 2px;
+      text-shadow: rgba(255, 255, 255, 0.7) 0 1px 0;
+      font-size: 12px;
+      margin-bottom: -6px; }
+      .head div a:hover {
+        color: #ccc; }
+    .head div a:nth-child(2) {
+      padding-left: 30px;
+      background: url("../img/shouye-xbi.png") no-repeat -87px -16px; }
+    .head div a:nth-child(1) {
+      display: inline-block;
+      width: 39px;
+      height: 30px;
+      background: url("../img/shouye-logo.png") no-repeat 0px 8px;
+      background-size: 40px 20px; }
+  .head ul {
+    float: right;
+    line-height: 28px; }
+    .head ul li {
+      float: left;
+      font-size: 12px;
+      margin: 0 3px; }
+      .head ul li a {
+        padding: 4px 8px 3px;
+        background: #f4f2ef;
+        border: 1px solid #bebab4;
+        border-radius: 2px;
+        box-shadow: inset 0 0 0 1px #fff;
+        font-size: 12px; }
+        .head ul li a:hover {
+          background: #fff; }
+    .head ul li:nth-child(3) a {
+      display: inline-block;
+      margin-top: 2px;
+      width: 15px;
+      height: 15px;
+      background: url("../img/shouye-xbi.png") no-repeat -124px -649px; }
+    .head ul li:nth-child(4) {
+      padding: 0 8px;
+      margin-left: 8px;
+      border-left: 1px solid #d5d3d0; }
+
+footer {
+  width: 100%; }
+
+.footer {
+  width: 1000px;
+  height: 320px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+  .footer div {
+    display: flex;
+    justify-content: space-between; }
+    .footer div ul {
+      width: 200px;
+      height: 210px;
+      padding-left: 10px;
+      border-bottom: 1px solid #ddd; }
+      .footer div ul li.foot-title {
+        color: #555;
+        font-size: 14px;
+        border-bottom: 1px solid #ddd;
+        margin: 0 0 10px;
+        padding: 0 0 10px;
+        line-height: 1; }
+      .footer div ul li a {
+        color: #999;
+        font-size: 12px;
+        line-height: 26px; }
+        .footer div ul li a:hover {
+          color: #97776a; }
+  .footer > ul {
+    margin: 0 auto;
+    width: 200px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; }
+    .footer > ul li {
+      float: left;
+      width: 48px; }
+      .footer > ul li a {
+        font-size: 12px;
+        color: #97776a; }
+  .footer > p {
+    text-align: center;
+    clear: left;
+    font-family: Arial;
+    color: #999;
+    line-height: 120%;
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 12px; }
+  .footer p.zfb {
+    display: block;
+    width: 88px;
+    height: 32px;
+    margin: 0 auto;
+    background: url("../img/alipay_veri.png") no-repeat 0px 0px;
+    background-size: 88px 32px; }
+
+.kefu {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  background: #f6f6f7; }
+  .kefu img {
+    width: 100%; }
+
+.gwc-meta {
+  width: 1000px;
+  padding: 10px 18px 8px 3px;
+  background: #eae7e1;
+  box-shadow: 0 0 0 1px rgba(77, 31, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  height: 46px;
+  margin: 0 auto; }
+  .gwc-meta form {
+    box-sizing: content-box;
+    font-size: 12px;
+    font-family: Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: normal;
+    vertical-align: baseline;
+    float: right; }
+    .gwc-meta form .weibo {
+      background: url(/img/shouye-xbi.png) no-repeat -129px -647px;
+      border: 1px solid #bebab4;
+      border-radius: 2px;
+      display: inline-block;
+      width: 23px;
+      height: 22px;
+      text-indent: -9999px;
+      margin-left: 6px;
+      float: left; }
+    .gwc-meta form div {
+      float: left;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      margin-right: -4px;
+      width: 75px;
+      box-sizing: content-box;
+      font-size: 12px;
+      font-family: Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+      text-decoration: none;
+      font-weight: 400;
+      line-height: normal;
+      vertical-align: baseline;
+      margin: 0; }
+      .gwc-meta form div:hover span {
+        background-color: #fdedd4; }
+        .gwc-meta form div:hover span .jian {
+          transform: rotateZ(-90deg); }
+      .gwc-meta form div:hover ul {
+        display: inline-block; }
+      .gwc-meta form div span {
+        box-sizing: border-box;
+        background: #f2f0ed;
+        border: 1px solid #bebab4;
+        border-radius: 2px 0 0 2px;
+        color: #999;
+        display: inline-block;
+        white-space: nowrap;
+        width: 100%;
+        height: 24px;
+        overflow: hidden;
+        text-align: left;
+        text-overflow: ellipsis;
+        vertical-align: middle;
+        padding: 3px 15px 4px;
+        transition: all .4s ease;
+        position: relative; }
+        .gwc-meta form div span .jian {
+          transform-origin: top;
+          transition: all .5s ease;
+          top: 7px;
+          left: 2px;
+          position: absolute;
+          height: 10px;
+          width: 10px;
+          background: url(/img/shouye-ji.png) no-repeat; }
+      .gwc-meta form div ul {
+        z-index: 999;
+        box-sizing: border-box;
+        background: #f7f7f7;
+        border: solid #bebab4;
+        border-width: 0 1px 1px;
+        border-radius: 0 0 2px 2px;
+        display: none;
+        padding: 0;
+        position: absolute;
+        top: 24px;
+        left: 0;
+        width: 100%;
+        list-style: none;
+        margin-left: 0;
+        font-size: 12px;
+        font-family: Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+        text-decoration: none;
+        font-weight: 400;
+        line-height: normal;
+        vertical-align: baseline;
+        margin: 0; }
+        .gwc-meta form div ul li {
+          padding: 4px 4px 4px 19px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-align: left;
+          text-overflow: ellipsis;
+          transition: none !important; }
+          .gwc-meta form div ul li:hover {
+            background-color: #fff; }
+    .gwc-meta form input {
+      float: left;
+      box-sizing: content-box;
+      height: 14px;
+      border-color: #bebab4;
+      border-radius: 0 2px 2px 0;
+      padding: 4px 6px 4px 7px;
+      vertical-align: middle;
+      width: 270px;
+      margin-left: 0;
+      outline: none;
+      display: inline-block;
+      padding: 4px;
+      color: gray;
+      border: 1px solid #ccc;
+      border-image: initial;
+      outline: 0;
+      border-radius: 3px;
+      transition: border .2s linear,box-shadow .2s linear;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); }
+    .gwc-meta form .go {
+      float: left;
+      box-sizing: content-box;
+      display: inline-block;
+      background: #f2f0ed url(/img/shouye-xbi.png) no-repeat -141px -62px;
+      width: 11px;
+      height: 12px;
+      margin-left: -5px;
+      padding: 5px 6px;
+      line-height: 1;
+      text-indent: -9999px;
+      border: 1px solid #bebab4;
+      vertical-align: bottom; }
+
+main {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  position: relative; }
+  main .gwc-title {
+    color: #603b2b;
+    margin-bottom: -1px;
+    font-size: 14px;
+    font-weight: 700;
+    background: #f4f2ef;
+    border: 1px solid #cfc5bf;
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
+    line-height: 18px;
+    padding: 15px 20px 14px; }
+  main .gwc-shop {
+    margin-top: -1px;
+    background: #fff;
+    border: 1px solid #d4d4d4;
+    width: 100%;
+    padding: 0;
+    font-size: 12px;
+    border-collapse: collapse; }
+    main .gwc-shop li {
+      border-top: 1px solid #e3e3e3;
+      border-bottom: 1px solid #eee;
+      transition: all .2s ease;
+      height: 86px;
+      transition: all .3s; }
+      main .gwc-shop li:hover {
+        background: #fcfafa; }
+      main .gwc-shop li .gwc-ck {
+        padding: 15px 0 10px 20px;
+        width: 13px;
+        border: none;
+        height: 20px;
+        line-height: 20px;
+        outline: none;
+        float: left;
+        margin: 30px 0px 0px 24px; }
+      main .gwc-shop li .gwc-img {
+        background: #fff;
+        float: left;
+        padding: 4px;
+        margin: 10px 8px 18px 20px;
+        border: 1px solid #ddd;
+        border-radius: 1px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+        transition: all .3s; }
+        main .gwc-shop li .gwc-img:hover {
+          border-color: rgba(255, 114, 51, 0.8);
+          box-shadow: 0 1px 4px rgba(255, 79, 0, 0.25); }
+      main .gwc-shop li .gwc-js {
+        float: left;
+        padding: 8px 20px 7px;
+        border: none;
+        height: 20px;
+        line-height: 20px;
+        width: 681px;
+        height: 86px; }
+        main .gwc-shop li .gwc-js a {
+          font-size: 14px;
+          margin-top: 5px;
+          line-height: 18px;
+          color: #97776a; }
+        main .gwc-shop li .gwc-js p {
+          width: 60px;
+          background: #c38c2c;
+          font-size: 12px;
+          color: #fff;
+          font-weight: 700;
+          margin: 5px 1px;
+          padding: 2px 5px;
+          border-radius: 3px;
+          cursor: default;
+          line-height: 20px; }
+      main .gwc-shop li .gwc-count {
+        float: left;
+        width: 77px;
+        height: 86px;
+        line-height: 24px;
+        padding: 8px 20px 7px;
+        border: none; }
+        main .gwc-shop li .gwc-count input {
+          display: inline-block;
+          width: 30px;
+          padding: 0 2px;
+          outline: none;
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+          height: 18px;
+          font-size: 12px;
+          line-height: 18px;
+          color: gray;
+          border: 1px solid #ccc;
+          border-radius: 3px; }
+      main .gwc-shop li .gwc-jg {
+        float: left;
+        width: 120px;
+        height: 86px;
+        color: #555;
+        text-align: right;
+        border-right: 1px solid #d4d4d4;
+        padding: 8px 20px 7px;
+        line-height: 20px; }
+        main .gwc-shop li .gwc-jg i {
+          color: #999;
+          margin-top: 4px;
+          font-size: 12px; }
+          main .gwc-shop li .gwc-jg i span {
+            color: #976633;
+            line-height: 16px; }
+        main .gwc-shop li .gwc-jg a {
+          height: 16px;
+          width: auto;
+          padding: 0 0 0 15px;
+          display: inline-block;
+          text-indent: 0;
+          text-align: left;
+          margin: 0 0 0 10px;
+          color: #976633;
+          background: url(/img/shouye-xbi.png) no-repeat -15px -288px; }
+  main .gwc-remove {
+    position: absolute;
+    bottom: -22px;
+    left: 20px;
+    display: block;
+    height: 20px;
+    padding: 1px 10px;
+    background: #f1f1f1;
+    color: #444;
+    border-radius: 0 0 3px 3px;
+    border-top: 1px solid #d4d4d4;
+    line-height: 18px;
+    outline: 0;
+    font-size: 14px;
+    transition: all .2s; }
+    main .gwc-remove:hover {
+      color: #fff;
+      background: #c00;
+      border-top: 1px solid #a00; }
+
+.gwc-fot {
+  width: 1000px;
+  height: 99px;
+  margin: 0 auto;
+  margin-bottom: 70px; }
+  .gwc-fot .gwc-note {
+    color: #94682e;
+    margin-bottom: -1px;
+    padding: 15px 20px 10px;
+    background: #fff6e0;
+    border: 1px solid #e8d3b4;
+    line-height: 17px;
+    font-size: 14px;
+    float: left; }
+    .gwc-fot .gwc-note p {
+      padding-left: 30px;
+      background: url(../img/shouye-xbi.png) no-repeat -210px -735px; }
+  .gwc-fot .gwc-noteright {
+    float: left;
+    margin-left: 60px; }
+    .gwc-fot .gwc-noteright .gwc-sum {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 15px 20px;
+      font-size: 12px;
+      width: 462px; }
+      .gwc-fot .gwc-noteright .gwc-sum ul li {
+        color: #000;
+        line-height: 2; }
+        .gwc-fot .gwc-noteright .gwc-sum ul li div {
+          float: right; }
+  .gwc-fot .gwc-next {
+    float: right;
+    margin-left: 10px;
+    display: inline-block;
+    background: #f0f0f0;
+    border: 1px solid #d4d4d4;
+    margin-top: 10px;
+    padding: 5px 10px;
+    color: #000;
+    font-size: 12px;
+    transition: all .2s; }
+    .gwc-fot .gwc-next:hover {
+      background: #fff; }
+  .gwc-fot .gwc-geiqian {
+    float: right;
+    margin-left: 10px;
+    margin-right: 0;
+    display: inline-block;
+    background: #cf4f15;
+    border: 1px solid #c23e03;
+    margin: 10px 0 0 10px;
+    padding: 5px 35px;
+    color: #fff;
+    font-size: 12px;
+    transition: all .2s; }
+    .gwc-fot .gwc-geiqian:hover {
+      opacity: .8; }

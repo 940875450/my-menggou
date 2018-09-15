@@ -1,0 +1,371 @@
+@import "reset";
+@import "header";
+.kefu{position: fixed;
+      width: 70px;
+      height: 70px;
+      box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.25);
+      border-radius: 50%;
+      bottom: 20px;
+      right: 20px;
+      background: #f6f6f7;
+      img{
+          width: 100%;
+      }
+}
+.gwc-meta{
+  width: 1000px;
+  padding: 10px 18px 8px 3px;
+  background: #eae7e1;
+  box-shadow: 0 0 0 1px rgba(77,31,0,.2), 0 1px 5px 0 rgba(0,0,0,.1);
+  height: 46px;
+  margin: 0 auto;
+  form{
+    box-sizing: content-box;
+    font-size: 12px;
+    font-family: Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: normal;
+    vertical-align: baseline;
+    float: right;
+    .weibo{
+      background: url(/img/shouye-xbi.png) no-repeat -129px -647px;
+      border: 1px solid #bebab4;
+      border-radius: 2px;
+      display: inline-block;
+      width: 23px;
+      height: 22px;
+      text-indent: -9999px;
+      margin-left: 6px;
+      float: left;
+    }
+    div{
+      float: left;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      margin-right: -4px;
+      width: 75px;
+      box-sizing: content-box;
+      font-size: 12px;
+      font-family: Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+      text-decoration: none;
+      font-weight: 400;
+      line-height: normal;
+      vertical-align: baseline;
+      margin: 0;
+      &:hover{
+          span{background-color: #fdedd4;
+            .jian{
+              transform: rotateZ(-90deg);
+            }
+          }
+          ul{display: inline-block;}
+      }
+    span{ box-sizing: border-box;
+          background: #f2f0ed;
+          border: 1px solid #bebab4;
+          border-radius: 2px 0 0 2px;
+          color: #999;
+          display: inline-block;
+          white-space: nowrap;
+          width: 100%;
+          height: 24px;
+          overflow: hidden;
+          text-align: left;
+          text-overflow: ellipsis;
+          vertical-align: middle;
+          padding: 3px 15px 4px;
+          transition: all .4s ease;
+          position: relative;
+          .jian{transform-origin: top;transition: all .5s ease;top: 7px;left: 2px;position: absolute;height: 10px;width: 10px;background: url(/img/shouye-ji.png) no-repeat;}
+        }
+    ul{
+      z-index: 999;
+      box-sizing: border-box;
+      background: #f7f7f7;
+      border: solid #bebab4;
+      border-width: 0 1px 1px;
+      border-radius: 0 0 2px 2px;
+      display: none;
+      padding: 0;
+      position: absolute;
+      top: 24px;
+      left: 0;
+      width: 100%;
+      list-style: none;
+      margin-left: 0;
+      font-size: 12px;
+      font-family: Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+      text-decoration: none;
+      font-weight: 400;
+      line-height: normal;
+      vertical-align: baseline;
+      margin: 0;
+      li{padding: 4px 4px 4px 19px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: left;
+        text-overflow: ellipsis;
+        transition: none!important;
+        &:hover{background-color: #fff;
+        }
+      }
+      }
+      }
+      input{
+        float: left;
+        box-sizing: content-box;
+        height: 14px;
+        border-color: #bebab4;
+        border-radius: 0 2px 2px 0;
+        padding: 4px 6px 4px 7px;
+        vertical-align: middle;
+        width: 270px;
+        margin-left: 0;
+        outline: none;
+        display: inline-block;
+        padding: 4px;
+        color: gray;
+        border: 1px solid #ccc;
+        border-image: initial;
+        outline: 0;
+        border-radius: 3px;
+        transition: border .2s linear,box-shadow .2s linear;
+        box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+      }
+      .go{
+        float: left;
+        box-sizing: content-box;
+        display: inline-block;
+        background: #f2f0ed url(/img/shouye-xbi.png) no-repeat -141px -62px;
+        width: 11px;
+        height: 12px;
+        margin-left: -5px;
+        padding: 5px 6px;
+        line-height: 1;
+        text-indent: -9999px;
+        border: 1px solid #bebab4;
+        vertical-align: bottom;
+      }
+  }
+}
+main{
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  position: relative;
+  .gwc-title{
+    color: #603b2b;
+    margin-bottom: -1px;
+    font-size: 14px;
+    font-weight: 700;
+    background: #f4f2ef;
+    border: 1px solid #cfc5bf;
+    box-shadow: inset 0 1px 0 0 hsla(0,0%,100%,.9);
+    line-height: 18px;
+    padding: 15px 20px 14px;
+  }
+  .gwc-shop{
+    margin-top: -1px;
+    background: #fff;
+    border: 1px solid #d4d4d4;
+    width: 100%;
+    padding: 0;
+    font-size: 12px;
+    border-collapse: collapse;
+    li{
+      border-top: 1px solid #e3e3e3;
+      border-bottom: 1px solid #eee;
+      transition: all .2s ease;
+      height: 86px;
+      transition: all .3s;
+      &:hover{background: #fcfafa;}
+      .gwc-ck{
+        padding: 15px 0 10px 20px;
+        width: 13px;
+        border: none;
+        height: 20px;
+        line-height: 20px;
+        outline: none;
+        float: left;
+        margin: 30px 0px 0px 24px;
+      }
+      .gwc-img{
+        background: #fff;
+        float: left;
+        padding: 4px;
+        margin: 10px 8px 18px 20px;
+        border: 1px solid #ddd;
+        border-radius: 1px;
+        box-shadow: 0 1px 1px rgba(0,0,0,.075);
+        transition: all .3s;
+        &:hover{border-color: rgba(255,114,51,.8);
+                box-shadow: 0 1px 4px rgba(255,79,0,.25);}
+      }
+      .gwc-js{
+        float: left;
+        padding: 8px 20px 7px;
+        border: none;
+        height: 20px;
+        line-height: 20px;
+        width: 681px;
+        height: 86px;
+        a{
+          font-size: 14px;
+          margin-top: 5px;
+          line-height: 18px;
+          color: #97776a;
+        }
+        p{
+          width: 60px;
+          background: #c38c2c;
+          font-size: 12px;
+          color: #fff;
+          font-weight: 700;
+          margin: 5px 1px;
+          padding: 2px 5px;
+          border-radius: 3px;
+          cursor: default;
+          line-height: 20px;
+        }
+      }
+      .gwc-count{
+        float: left;
+        width: 77px;
+        height: 86px;
+        line-height: 24px;
+        padding: 8px 20px 7px;
+        border: none;
+        input{
+          display: inline-block;
+          width: 30px;
+          padding: 0 2px;
+          outline: none;
+          box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+          height: 18px;
+          font-size: 12px;
+          line-height: 18px;
+          color: gray;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+        }
+      }
+      .gwc-jg{
+        float: left;
+        width: 120px;
+        height: 86px;
+        color: #555;
+        text-align: right;
+        border-right: 1px solid #d4d4d4;
+        padding: 8px 20px 7px;
+        line-height: 20px;
+        i{
+          color: #999;
+          margin-top: 4px;
+          font-size: 12px;
+          span{
+                color: #976633;
+                line-height: 16px;
+          }
+        }
+        a{
+          height: 16px;
+          width: auto;
+          padding: 0 0 0 15px;
+          display: inline-block;
+          text-indent: 0;
+          text-align: left;
+          margin: 0 0 0 10px;
+          color: #976633;
+          background: url(/img/shouye-xbi.png) no-repeat -15px -288px;
+        }
+      }
+    }
+  }
+  .gwc-remove{
+     position: absolute;
+     bottom: -22px;
+     left: 20px;
+     display: block;
+     height: 20px;
+     padding: 1px 10px;
+     background: #f1f1f1;
+     color: #444;
+     border-radius: 0 0 3px 3px;
+     border-top: 1px solid #d4d4d4;
+     line-height: 18px;
+     outline: 0;
+     font-size: 14px;
+     transition: all .2s;
+     &:hover{color: #fff;
+            background: #c00;
+            border-top: 1px solid #a00;}
+  }
+}
+.gwc-fot{
+  width: 1000px;
+  height: 99px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  .gwc-note{
+    color: #94682e;
+    margin-bottom: -1px;
+    padding: 15px 20px 10px;
+    background: #fff6e0;
+    border: 1px solid #e8d3b4;
+    line-height: 17px;
+    font-size: 14px;
+    float: left;
+    p{
+      padding-left: 30px;
+    background: url(../img/shouye-xbi.png) no-repeat -210px -735px;
+    }
+  }
+  .gwc-noteright{
+    float: left;
+    margin-left: 60px;
+    .gwc-sum{
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 15px 20px;
+      font-size: 12px;
+      width: 462px;
+      ul li{
+        color: #000;
+        line-height: 2;
+        div{
+          float: right;
+        }
+      }
+    }
+  }
+  .gwc-next{
+    float: right;
+    margin-left: 10px;
+    display: inline-block;
+    background: #f0f0f0;
+    border: 1px solid #d4d4d4;
+    margin-top: 10px;
+    padding: 5px 10px;
+    color: #000;
+    font-size: 12px;
+    transition: all .2s;
+    &:hover{background: #fff;}
+  }
+  .gwc-geiqian{
+    float: right;
+    margin-left: 10px;
+    margin-right: 0;
+    display: inline-block;
+    background: #cf4f15;
+    border: 1px solid #c23e03;
+    margin: 10px 0 0 10px;
+    padding: 5px 35px;
+    color: #fff;
+    font-size: 12px;
+    transition: all .2s;
+    &:hover{opacity: .8;}
+  }
+}

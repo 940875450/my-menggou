@@ -1,0 +1,140 @@
+@import "reset";
+body{background:#e5edf2;}
+.denglu-wrap{
+  width: 1145px;
+  height: 694px;
+  margin: 0 auto;
+  margin-top: 20px;
+  box-shadow: 0 85px 68px -58px rgba(99,120,149,.55);
+  position:relative;
+  background: url(/img/denglu.png) no-repeat 694px 1px #fff;
+  .denglu-fr{
+    width: 635px;
+    color: #4b4350;
+    font-size: 14px;
+    line-height: 1.42857143;
+    padding-top: 65px;
+    margin-top: 90px;
+    h1{
+      font-size: 30px;
+      color: #6cc4d2;
+      text-align: center;
+    }
+    form .denglu-put{
+      margin: 50px auto 0 auto;
+      position: relative;
+      width: 365px;
+      height: 49px;
+      input{display: block;
+            border: none;
+            padding: 0 0 0 29px;
+            border-bottom: 1px solid #a1a1a1;
+            font-size: 20px;
+            width: 365px;
+            outline: none;
+            &.putOne{
+              background: url(/img/denglu-user.png) no-repeat 1px 1px;
+            }
+            &.putTwo{
+              background: url(/img/denglu-pass.png) no-repeat 2px 0px;
+            }
+          }
+      span{
+        a{display: inline-block;
+          float: right;
+          color: #6cc3d3;
+          font-size: 15px;
+          margin-top: 5px;}
+      }
+      i{
+        background: url(/img/denglu-ts.png) no-repeat 1px 4px;
+        display: none;
+        color: #ff3c68;
+        font-size: 18px;
+        padding-left: 25px;
+        margin: 0;
+      }
+    }
+    form{
+      .denglu-login{
+        display: block;
+        width: 218px;
+        height: 45px;
+        cursor: pointer;
+        border: none;
+        margin: 40px auto 0 auto;
+        font-size: 20px;
+        font-weight: 700;
+        background: #6cc3d3;
+        color: #fff;
+        border-radius: 22px;
+        outline: none;
+        transition: .3s box-shadow ease;
+        &:hover{
+          box-shadow: 0 5px 10px rgba(99,120,149,.23);
+        }
+      }
+      .denglu-zc{
+        display: block;
+        width: 218px;
+        height: 43px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #6cc3d3;
+        text-align: center;
+        line-height: 39px;
+        cursor: pointer;
+        border: 1px solid #6cc3d3;
+        margin: 30px auto 0;
+        border-radius: 22px;
+        transition: .3s all ease;
+        outline: none;
+        
+        &:hover{
+          color: #fff;
+          background: #ffb37b;
+          border-color: #ffb37b;
+          box-shadow: 0 5px 10px rgba(78,44,0,.23);
+        }
+      }
+    }
+    .denglu-orapl{
+      width: 350px;
+      margin: 42px auto 0 auto;
+      text-align: center;
+      .or{
+        background: url(/img/denglu-or.png) no-repeat;
+        width: 304px;
+        height: 12px;
+        margin: 0 auto;
+      }
+      .denglu-alipay{
+        list-style: none;
+        height: 62px;
+        text-align: center;
+        margin-top: 33px;
+       a{
+        display: inline-block;
+        width: 62px;
+        height: 62px;
+        background: url(/img/denglu-alipay.png) no-repeat;
+      }
+    }
+    }
+    p{
+      width: 415px;
+      margin: 35px auto 0;
+      text-align: center;
+      color: #b1b1b1;
+      font-size: 12px;
+    }
+  }
+  .denglu-foot{
+    position: absolute;
+    margin: 20px 0 20px 0;
+    right: 0;
+    top: 100%;
+    color: #7e848d;
+    font-size: 12px;
+  }
+}

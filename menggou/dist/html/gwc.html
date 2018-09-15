@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>购物车</title>
+  <link rel="stylesheet" href="/css/gwc.css">
+  <script type="text/javascript" src="/libs/require.js" data-main="/js/gwc.js"></script>
+</head>
+<body>
+<header></header>
+<div class="gwc-meta">
+<form>
+<a class="weibo" target="_blank" href="http://weibo.com/u/2175931162" title="新浪微博"></a>
+<div class="gwc-chose">
+<span><p>Amazon</p>
+  <div class="jian"></div>
+</span>
+<ul>
+<li>Amazon</li>
+<li>骏河屋</li>
+</ul>
+</div>
+<input type="text" placeholder="搜索商品的 名称 / 作者 / 厂商 / ASIN 都可以喔">
+<a href="/html/shop.html" class="go">GO!</a>
+</form>
+</div>
+<main>
+  <div class="gwc-title">
+  <input type="checkbox" class="select-all" style="margin-right:20px;" checked="checked">
+  商城购物车
+  </div>
+  <ul class="gwc-shop" id="gwcshop"></ul>
+  <script type="text/html" id="gwcShop">
+  {{each arr item value}}
+  	<li>
+      <input type="checkbox" checked="checked" class="gwc-ck">
+      <a href="/html/element.html" data-id = "{{item.id}}" class="gwc-img gwc-toele"><img src="{{item.img1}}" width="45" height="45"></a>
+      <span class="gwc-js">
+        <a href="/html/element.html" data-id = "{{item.id}}" class="gwc-toele">{{item.title}}</a>
+        <p>萌猫商城</p>
+      </span>
+      <p class="gwc-count">
+        数量<br><input type="number" max="3" min="1" class="gwc-change" data-id="{{item.id}}"value="{{item.elenum}}">
+      </p>
+      <p class="gwc-jg">
+        <i><span class="danjia">{{item.eleprice}}</span><br>({{item.weight}}g)</i><br>
+        <a href="javascript:;" class="gwc-del" data-id="{{item.id}}">删除</a>
+      </p>
+    </li>
+    {{ /each}}
+  </script>
+  <script type="text/html" id="gwcnone">
+  		 <li style="padding: 8px 20px 7px;
+    border: none;
+    height: 60px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 14px;">
+  			现在购物车中没有商品哦~
+  		</li>
+  </script>
+  <a href="javascript:;" class="gwc-remove">× 清空购物车</a>
+</main>
+<div class="gwc-fot">
+  <div class="gwc-note">
+  <p>萌猫商城的商品并不需要支付国际运费，商品的售价中已经包含了<br>这部分费用。</p>
+  </div>
+<div class="gwc-noteright">
+<div class="gwc-sum">
+  <ul>
+      <li><b>总计</b><div><b id="ele_all">0.00</b>&nbsp;RMB</div></li>
+  </ul>
+</div>
+    <a href="javascript:;" class="gwc-geiqian">结算商城商品</a>
+    <a href="/html/shop.html" class="gwc-next">继续购物</a>
+  </div>
+</div>
+<footer></footer>
+<a href="javascript:;" class="kefu"><img src="/img/kefu.png"></a>
+</body>
+</html>

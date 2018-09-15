@@ -1,0 +1,276 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, em, i {
+  font-weight: 100;
+  font-style: normal; }
+
+ul, ol, li {
+  list-style-type: none; }
+
+a {
+  color: #666;
+  text-decoration: none;
+  outline: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+body {
+  background: url(/img/aaa.jpg);
+  background-size: 30%; }
+
+.kefu {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  background: #f6f6f7; }
+  .kefu img {
+    width: 100%; }
+
+.my-shop {
+  position: fixed;
+  width: 42px;
+  height: 42px;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background: url(/img/front_end.png) no-repeat -284px -201px #fff;
+  transition: all .2s; }
+  .my-shop:hover {
+    background-position: -284px -242px; }
+
+.shop-wrap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -635px; }
+  .shop-wrap .shop-left {
+    width: 170px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 700px;
+    height: 100%;
+    z-index: 2;
+    background: #f3f3f3; }
+    .shop-wrap .shop-left .shop-logo img {
+      display: block;
+      width: 100%;
+      text-indent: -9999px;
+      margin-bottom: 30px; }
+    .shop-wrap .shop-left .shop-nav {
+      padding-top: 15px; }
+      .shop-wrap .shop-left .shop-nav li:hover a {
+        background: #fafafa;
+        box-shadow: inset 5px 0 0 #777; }
+      .shop-wrap .shop-left .shop-nav .group {
+        color: #404040;
+        display: block;
+        text-decoration: none;
+        line-height: 2;
+        padding: 6px 2em;
+        font-size: 12px; }
+      .shop-wrap .shop-left .shop-nav .active .group {
+        background: #fff;
+        box-shadow: inset 5px 0 0 #ffa200;
+        color: #333;
+        font-weight: 700;
+        font-size: 12px; }
+    .shop-wrap .shop-left form {
+      padding-top: 15px;
+      padding-left: 20px; }
+      .shop-wrap .shop-left form .shop-server {
+        background: #fff;
+        border: 1px solid transparent;
+        color: #999;
+        display: inline-block;
+        outline: 0;
+        padding: .41em;
+        height: 14px;
+        margin-left: .2em;
+        width: 83px;
+        -webkit-transition: width .2s ease .1s,background .6s ease,color .2s ease;
+        -moz-transition: width .2s ease .1s,background .6s ease,color .2s ease;
+        -ms-transition: width .2s ease .1s,background .6s ease,color .2s ease;
+        -o-transition: width .2s ease .1s,background .6s ease,color .2s ease;
+        transition: width .2s ease .1s,background .6s ease,color .2s ease; }
+      .shop-wrap .shop-left form .shop-serbtn {
+        background: url(../img/front_end.png) -19px -7px #ccc;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 100%;
+        text-indent: -9999px;
+        margin-left: -.33em;
+        width: 1.66em;
+        height: 1.66em;
+        padding: .41em;
+        vertical-align: top; }
+  .shop-wrap .shop-right {
+    width: 1100px;
+    box-shadow: 0 0 1px transparent;
+    float: left;
+    margin-left: 170px;
+    background: #fff; }
+    .shop-wrap .shop-right .shop-bq {
+      width: 1100px;
+      height: 80px;
+      background: #F7F7F7; }
+    .shop-wrap .shop-right .shop-keyw {
+      border-top: 1px solid #e7e7e7;
+      overflow: hidden;
+      padding: .8em 0 .8em;
+      background: #f7f7f7;
+      border-bottom: 2px solid #555; }
+      .shop-wrap .shop-right .shop-keyw dl {
+        padding: 0 0 0 35px;
+        overflow: hidden; }
+        .shop-wrap .shop-right .shop-keyw dl dt {
+          float: left;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 48px; }
+        .shop-wrap .shop-right .shop-keyw dl dd {
+          float: left; }
+          .shop-wrap .shop-right .shop-keyw dl dd form {
+            padding-top: 12px;
+            padding-left: 20px; }
+            .shop-wrap .shop-right .shop-keyw dl dd form .shop-server {
+              background: #fff;
+              border: none;
+              color: #999;
+              display: inline-block;
+              outline: 0;
+              padding: .41em;
+              height: 16px;
+              margin-left: .2em;
+              width: 145px;
+              -webkit-transition: width .2s ease .1s,background .6s ease,color .2s ease;
+              -moz-transition: width .2s ease .1s,background .6s ease,color .2s ease;
+              -ms-transition: width .2s ease .1s,background .6s ease,color .2s ease;
+              -o-transition: width .2s ease .1s,background .6s ease,color .2s ease;
+              transition: width .2s ease .1s,background .6s ease,color .2s ease; }
+            .shop-wrap .shop-right .shop-keyw dl dd form .shop-serbtn {
+              background: url(../img/front_end.png) -19px -7px #ccc;
+              border: none;
+              cursor: pointer;
+              display: inline-block;
+              font-size: 100%;
+              text-indent: -9999px;
+              margin-left: -.33em;
+              width: 1.66em;
+              height: 1.66em;
+              padding: .41em;
+              vertical-align: top; }
+    .shop-wrap .shop-right .shop-fenye {
+      padding: 0 35px;
+      width: 1100px;
+      height: 50px;
+      background: #eaeaea; }
+      .shop-wrap .shop-right .shop-fenye .shop-fy {
+        float: right;
+        width: 298px;
+        height: 50px;
+        font-size: 12px;
+        line-height: 50px; }
+        .shop-wrap .shop-right .shop-fenye .shop-fy .shop-page {
+          font-weight: 700;
+          margin-right: 10px; }
+          .shop-wrap .shop-right .shop-fenye .shop-fy .shop-page .shop-pginput {
+            display: inline-block;
+            border: none;
+            padding: 1px 1px 1px 5px;
+            width: 40px;
+            outline: none;
+            font-size: 12px;
+            font-weight: 700; }
+        .shop-wrap .shop-right .shop-fenye .shop-fy a {
+          font-size: 12px;
+          color: #333;
+          padding: 0 10px;
+          display: inline-block;
+          height: 50px; }
+          .shop-wrap .shop-right .shop-fenye .shop-fy a:hover {
+            background: #fff; }
+        .shop-wrap .shop-right .shop-fenye .shop-fy a.shop-jump {
+          font-weight: 700; }
+    .shop-wrap .shop-right .shop-main {
+      background: #fff;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .shop-wrap .shop-right .shop-main .shop-show {
+        width: 173px;
+        height: 275px;
+        border-bottom: 2px solid #fff;
+        padding: 12px;
+        margin-bottom: 45px; }
+        .shop-wrap .shop-right .shop-main .shop-show:hover {
+          background: #eee;
+          border-color: #cc8200; }
+        .shop-wrap .shop-right .shop-main .shop-show a img {
+          width: 150px;
+          height: 150px; }
+        .shop-wrap .shop-right .shop-main .shop-show a.shop-title {
+          color: #111;
+          display: block;
+          font-weight: 700;
+          text-decoration: none;
+          line-height: 1.625;
+          margin: 5px 0;
+          height: 39px;
+          overflow: hidden;
+          font-size: 12px; }
+        .shop-wrap .shop-right .shop-main .shop-show .shop-date {
+          background: url(../img/front_end.png) -25px -201px no-repeat;
+          color: #aaa;
+          line-height: 2em;
+          text-indent: 24px;
+          font-size: 12px; }
+        .shop-wrap .shop-right .shop-main .shop-show .shop-price {
+          background: url(../img/front_end.png) -25px -249px no-repeat;
+          color: #b86861;
+          font-weight: 700;
+          line-height: 2em;
+          text-indent: 24px;
+          font-size: 12px; }
+    .shop-wrap .shop-right .shop-footer {
+      width: 1100px;
+      height: 40px;
+      text-align: center; }
+      .shop-wrap .shop-right .shop-footer a {
+        background: url(../img/front_end.png) -195px -508px no-repeat;
+        color: #404040;
+        display: inline-block;
+        font-weight: 700;
+        text-decoration: none;
+        text-indent: 25px;
+        font-size: 12px;
+        line-height: 40px;
+        transition: all .2s; }
+        .shop-wrap .shop-right .shop-footer a:hover {
+          background: url(../img/front_end.png) -195px -512px no-repeat; }
